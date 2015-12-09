@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=
+        ".ReadActivity2" >
+    <item
+        android:id="@+id/menu_tdbr"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:title="@string/tadabbur"/>
+    <item
+        android:id="@+id/menu_mark"
+        android:icon="@drawable/ic_bookmark_black_24dp"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        android:title="@string/mark"/>
+</menu>
