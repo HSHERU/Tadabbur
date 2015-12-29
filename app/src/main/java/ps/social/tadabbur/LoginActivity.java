@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText usernameEditText;
     private EditText passwordEditText;
+    int privilege = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +86,9 @@ public class LoginActivity extends AppCompatActivity {
                                                        // Start an intent for the dispatch activity
                                                        Intent intent = new Intent(LoginActivity.this, ReadMainActivity.class);
                                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                       intent.putExtra("username",usernameEditText.getText());
+                                                       intent.putExtra("privilege", privilege);
+                                                       intent.putExtra("requestCode", 1);
                                                        startActivity(intent);
                                                    }
                                                }

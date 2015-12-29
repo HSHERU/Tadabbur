@@ -24,8 +24,8 @@ public class ReadActivity2 extends AppCompatActivity {
     ViewPager myVP;
 
     private PagerAdapter mPagerAdapter;
-    public String username="";
-    public int privilege=0;
+    public String username;
+    public int privilege=2;
     public int requestCode;
 
     @Override

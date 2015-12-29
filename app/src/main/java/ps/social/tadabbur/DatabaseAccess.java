@@ -237,7 +237,7 @@ public class DatabaseAccess {
         while (!cursor.isAfterLast()){
             Bookmarks bk=new Bookmarks();
             bk.setID(cursor.getInt(0));
-            bk.setUser(cursor.getString(1));
+            //bk.setUser(cursor.getString(1));
             bk.setTime_date(cursor.getString(2));
             bk.setSafha(cursor.getInt(3));
             cursor.moveToNext();

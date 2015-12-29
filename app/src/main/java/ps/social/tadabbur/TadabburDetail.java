@@ -29,6 +29,9 @@ public class TadabburDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tadabbur_detail);
+
+
+
         Bundle extras = getIntent().getExtras();
         privilege=extras.getInt("privilege");
         username=extras.getString("username");

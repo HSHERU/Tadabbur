@@ -14,7 +14,9 @@
         android:layout_height="400dp"
         android:id="@+id/comment_listView"
         android:divider="@color/common_action_bar_splitter"
-        android:padding="@dimen/activity_vertical_margin">
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true">
     </ListView>
 
     <LinearLayout
@@ -24,7 +26,8 @@
         android:measureWithLargestChild="true"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
 
         <Button
             android:layout_width="0dp"

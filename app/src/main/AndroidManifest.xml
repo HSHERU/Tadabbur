@@ -69,8 +69,7 @@
         <activity android:name=".Sign_up" />
         <activity android:name=".Tadabbur_page" />
         <activity android:name=".AddComment" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

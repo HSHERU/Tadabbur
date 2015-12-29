@@ -24,11 +24,7 @@ public class Tadabbur_page extends AppCompatActivity implements View.OnClickList
 
     Button Login_button;
     Button add_comment_button;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    //private GoogleApiClient client;
+
 
 
     @Override
@@ -71,9 +67,7 @@ public class Tadabbur_page extends AppCompatActivity implements View.OnClickList
         add_comment_button = (Button) findViewById(R.id.add_comment);
 
         add_comment_button.setOnClickListener(this);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        //client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
     }
 
     @Override
@@ -88,48 +82,14 @@ public class Tadabbur_page extends AppCompatActivity implements View.OnClickList
                 Intent intent1 = new Intent(Tadabbur_page.this, AddComment.class);
                 startActivity(intent1);
                 break;
+
+            case R.id.comment_list_textView:
+                Intent intent2 = new Intent(Tadabbur_page.this, TadabburDetail.class);
+                startActivity(intent2);
+                break;
         }
     }
 
-    /**@Override
-    public void onStart() {
-        super.onStart();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "Tadabbur_page Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://displaypdfonly.abdulrahmanaldehan.com.displaypdfonly/http/host/path")
-        );
-        AppIndex.AppIndexApi.start(client, viewAction);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        Action viewAction = Action.newAction(
-                Action.TYPE_VIEW, // TODO: choose an action type.
-                "Tadabbur_page Page", // TODO: Define a title for the content shown.
-                // TODO: If you have web page content that matches this app activity's content,
-                // make sure this auto-generated web page URL is correct.
-                // Otherwise, set the URL to null.
-                Uri.parse("http://host/path"),
-                // TODO: Make sure this auto-generated app deep link URI is correct.
-                Uri.parse("android-app://displaypdfonly.abdulrahmanaldehan.com.displaypdfonly/http/host/path")
-        );
-        AppIndex.AppIndexApi.end(client, viewAction);
-        client.disconnect();
-    }
-    */
 
 }

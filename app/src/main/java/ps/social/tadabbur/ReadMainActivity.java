@@ -9,13 +9,14 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class ReadMainActivity extends AppCompatActivity {
-    public static int privilege=0;
+    public static int privilege=2;
     public static String username;
     Button login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read_main);
+
 
         Button logg=(Button)findViewById(R.id.loginbtn);
         if (privilege!=0){
@@ -66,6 +67,9 @@ public class ReadMainActivity extends AppCompatActivity {
         indx.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent intent=new Intent(ReadMainActivity.this,IndexActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("privilege",privilege);
+                intent.putExtra("requestCode",1);
                 startActivity(intent);
             }
         });
@@ -74,6 +78,12 @@ public class ReadMainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
 
                     Intent intent = new Intent(ReadMainActivity.this, BookMarkActivity.class);
+                Bundle extras = getIntent().getExtras();
+                privilege=extras.getInt("privilege");
+                username=extras.getString("username");
+                    intent.putExtra("username",username);
+                    intent.putExtra("privilege",privilege);
+                    intent.putExtra("requestCode",1);
                     startActivity(intent);
 
             }

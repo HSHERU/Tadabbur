@@ -1,7 +1,7 @@
 package ps.social.tadabbur;
 
 /**
- * Created by Kanaan on 12/5/2015.
+ * Created by abdulrahman on 12/5/2015.
  */
 public class Bookmarks {
     public int ID;
@@ -28,14 +28,9 @@ public class Bookmarks {
         this.time_date = time_date;
     }
 
-    public String getUser() {
+    //public String getUser() { return user;    }
 
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
+    //public void setUser(String user) {this.user = user;    }
 
     public int getID() {
 
